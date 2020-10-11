@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B4FEF8394930B47631CE413D /* Pods_MovieTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7629803C65AEF4F084BB9B59 /* Pods_MovieTracker.framework */; };
 		E2BDB44E2533466D005DE965 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BDB44D2533466D005DE965 /* AppDelegate.swift */; };
-		E2BDB4502533466D005DE965 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BDB44F2533466D005DE965 /* SceneDelegate.swift */; };
 		E2BDB4522533466D005DE965 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BDB4512533466D005DE965 /* ViewController.swift */; };
 		E2BDB4552533466D005DE965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BDB4532533466D005DE965 /* Main.storyboard */; };
 		E2BDB45725334672005DE965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BDB45625334672005DE965 /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 		9C2C0AF5311EE54091567BE6 /* Pods-MovieTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieTracker.debug.xcconfig"; path = "Target Support Files/Pods-MovieTracker/Pods-MovieTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		E2BDB44A2533466D005DE965 /* MovieTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BDB44D2533466D005DE965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2BDB44F2533466D005DE965 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2BDB4512533466D005DE965 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2BDB4542533466D005DE965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2BDB45625334672005DE965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 				9C2C0AF5311EE54091567BE6 /* Pods-MovieTracker.debug.xcconfig */,
 				99F2A37C22CD4C6B49B4F8DB /* Pods-MovieTracker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				E2BDB44D2533466D005DE965 /* AppDelegate.swift */,
-				E2BDB44F2533466D005DE965 /* SceneDelegate.swift */,
 				E2BDB4512533466D005DE965 /* ViewController.swift */,
 				E2BDB4532533466D005DE965 /* Main.storyboard */,
 				E2BDB45625334672005DE965 /* Assets.xcassets */,
@@ -209,7 +205,6 @@
 			files = (
 				E2BDB4522533466D005DE965 /* ViewController.swift in Sources */,
 				E2BDB44E2533466D005DE965 /* AppDelegate.swift in Sources */,
-				E2BDB4502533466D005DE965 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43Z3222T2H;
 				INFOPLIST_FILE = MovieTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43Z3222T2H;
 				INFOPLIST_FILE = MovieTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
