@@ -7,25 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256445652678F6090089A546 /* JSONDecoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256445642678F6090089A546 /* JSONDecoderExtension.swift */; };
+		2564456B2678FB8D0089A546 /* RequestParameterKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2564456A2678FB8D0089A546 /* RequestParameterKey.swift */; };
 		B4FEF8394930B47631CE413D /* Pods_MovieTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7629803C65AEF4F084BB9B59 /* Pods_MovieTracker.framework */; };
 		E2BDB44E2533466D005DE965 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BDB44D2533466D005DE965 /* AppDelegate.swift */; };
 		E2BDB4522533466D005DE965 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BDB4512533466D005DE965 /* ViewController.swift */; };
-		E2BDB4552533466D005DE965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BDB4532533466D005DE965 /* Main.storyboard */; };
 		E2BDB45725334672005DE965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BDB45625334672005DE965 /* Assets.xcassets */; };
 		E2BDB45A25334672005DE965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BDB45825334672005DE965 /* LaunchScreen.storyboard */; };
+		E2BDB4632534A2B1005DE965 /* ExtensionRxMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BDB4622534A2B1005DE965 /* ExtensionRxMoya.swift */; };
+		E2BDB4652534AE6A005DE965 /* ExtensionUIview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BDB4642534AE6A005DE965 /* ExtensionUIview.swift */; };
+		E2BDB4682534AEDE005DE965 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BDB4672534AEDE005DE965 /* BaseTargetType.swift */; };
+		E2BDB46A2534AF81005DE965 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BDB4692534AF81005DE965 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		256445642678F6090089A546 /* JSONDecoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderExtension.swift; sourceTree = "<group>"; };
+		2564456A2678FB8D0089A546 /* RequestParameterKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParameterKey.swift; sourceTree = "<group>"; };
 		7629803C65AEF4F084BB9B59 /* Pods_MovieTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F2A37C22CD4C6B49B4F8DB /* Pods-MovieTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieTracker.release.xcconfig"; path = "Target Support Files/Pods-MovieTracker/Pods-MovieTracker.release.xcconfig"; sourceTree = "<group>"; };
 		9C2C0AF5311EE54091567BE6 /* Pods-MovieTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieTracker.debug.xcconfig"; path = "Target Support Files/Pods-MovieTracker/Pods-MovieTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		E2BDB44A2533466D005DE965 /* MovieTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2BDB44D2533466D005DE965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2BDB4512533466D005DE965 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E2BDB4542533466D005DE965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2BDB45625334672005DE965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2BDB45925334672005DE965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2BDB45B25334672005DE965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2BDB4622534A2B1005DE965 /* ExtensionRxMoya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionRxMoya.swift; sourceTree = "<group>"; };
+		E2BDB4642534AE6A005DE965 /* ExtensionUIview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIview.swift; sourceTree = "<group>"; };
+		E2BDB4672534AEDE005DE965 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		E2BDB4692534AF81005DE965 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +88,35 @@
 		E2BDB44C2533466D005DE965 /* MovieTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E2BDB4612534A282005DE965 /* Extension */,
+				E2BDB4662534AE8F005DE965 /* Network */,
 				E2BDB44D2533466D005DE965 /* AppDelegate.swift */,
 				E2BDB4512533466D005DE965 /* ViewController.swift */,
-				E2BDB4532533466D005DE965 /* Main.storyboard */,
 				E2BDB45625334672005DE965 /* Assets.xcassets */,
 				E2BDB45825334672005DE965 /* LaunchScreen.storyboard */,
 				E2BDB45B25334672005DE965 /* Info.plist */,
 			);
 			path = MovieTracker;
+			sourceTree = "<group>";
+		};
+		E2BDB4612534A282005DE965 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E2BDB4622534A2B1005DE965 /* ExtensionRxMoya.swift */,
+				256445642678F6090089A546 /* JSONDecoderExtension.swift */,
+				E2BDB4642534AE6A005DE965 /* ExtensionUIview.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E2BDB4662534AE8F005DE965 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E2BDB4692534AF81005DE965 /* WebService.swift */,
+				E2BDB4672534AEDE005DE965 /* BaseTargetType.swift */,
+				2564456A2678FB8D0089A546 /* RequestParameterKey.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +181,6 @@
 			files = (
 				E2BDB45A25334672005DE965 /* LaunchScreen.storyboard in Resources */,
 				E2BDB45725334672005DE965 /* Assets.xcassets in Resources */,
-				E2BDB4552533466D005DE965 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,22 +233,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2BDB4682534AEDE005DE965 /* BaseTargetType.swift in Sources */,
 				E2BDB4522533466D005DE965 /* ViewController.swift in Sources */,
+				E2BDB4632534A2B1005DE965 /* ExtensionRxMoya.swift in Sources */,
+				E2BDB4652534AE6A005DE965 /* ExtensionUIview.swift in Sources */,
+				E2BDB46A2534AF81005DE965 /* WebService.swift in Sources */,
+				2564456B2678FB8D0089A546 /* RequestParameterKey.swift in Sources */,
 				E2BDB44E2533466D005DE965 /* AppDelegate.swift in Sources */,
+				256445652678F6090089A546 /* JSONDecoderExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E2BDB4532533466D005DE965 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2BDB4542533466D005DE965 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E2BDB45825334672005DE965 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
