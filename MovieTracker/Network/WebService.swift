@@ -46,7 +46,7 @@ final class WebService: WebServiceLogic {
     
     let sessionConfiguration = URLSessionConfiguration.default
     sessionConfiguration.headers = .default
-    sessionConfiguration.timeoutIntervalForRequest = 60
+    sessionConfiguration.timeoutIntervalForRequest = 20
     let session = Session(configuration: sessionConfiguration,
                           startRequestsImmediately: false)
     return .init(callbackQueue: .global(),

@@ -8,15 +8,10 @@
 
 import Moya
 
-enum TMDB {
-  static let apiDomain = "https://api.themoviedb.org/3"
-  static let apiKey = "776d12d56ba8f4d04ca4622992ddd75c"
-}
-
 protocol BaseTargetType: TargetType {}
 
 extension BaseTargetType {
-  var baseURL: URL { return URL(string: TMDB.apiDomain)! }
+  var baseURL: URL { return URL(string: Constant.TMDB.apiDomain)! }
   var method: Moya.Method { return .get }
   var headers: [String : String]? { return nil }
   var task: Task { return .requestPlain }
