@@ -10,13 +10,13 @@ import Foundation
 import RxSwift
 
 protocol MovieRepositoryLogic: BaseRepository {
-  func getMovieList(type: MovieAPI.GetMovieList.ListType,
+  func getMovieList(type: MovieListType,
                     page: Int) -> Single<MovieList>
 }
 
 final class MovieRepository: BaseRepository, MovieRepositoryLogic {
   
-  func getMovieList(type: MovieAPI.GetMovieList.ListType,
+  func getMovieList(type: MovieListType,
                     page: Int) -> Single<MovieList> {
     return sendRequest(target: MovieAPI.GetMovieList(type: type,
                                                      page: page))

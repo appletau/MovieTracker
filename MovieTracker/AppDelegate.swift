@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate {
         .observeOn(MainScheduler.instance)
         .subscribe { _ in
           let window = UIWindow(frame: UIScreen.main.bounds)
-          let vc = ViewController()
-          window.rootViewController = vc
+          let navigaionVc = UINavigationController(rootViewController: HomePageViewController())
+          window.rootViewController = navigaionVc
           window.makeKeyAndVisible()
           self.window = window
         }
@@ -37,8 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate {
       .observeOn(MainScheduler.instance)
       .subscribe { _ in
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let vc = ViewController()
-        window.rootViewController = vc
+        let navigaionVc = UINavigationController(rootViewController: HomePageViewController())
+        window.rootViewController = navigaionVc
         window.makeKeyAndVisible()
         window.windowScene = windowScene
         self.window = window

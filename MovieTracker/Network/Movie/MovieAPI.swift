@@ -11,34 +11,14 @@ import Moya
 
 enum MovieAPI {
   
-  struct GetMovieList: BaseTargetType {
-    
-    enum ListType {
-      case latest, nowPlaying, popular, topRated, upcoming
-      
-      var requestPath: String {
-        switch self {
-        case .latest:
-          return "movie/latest"
-        case .nowPlaying:
-          return "movie/now_playing"
-        case .popular:
-          return "movie/popular"
-        case .topRated:
-          return "movie/top_rated"
-        case .upcoming:
-          return "movie/upcoming"
-        }
-      }
-    }
-    
-    var path: String { return type.requestPath }
+  struct GetMovieList: BaseTargetType {    
+    var path: String { return getPath(type: type) }
     var task: Task { return .requestParameters(parameters: parameters , encoding: URLEncoding.default)  }
     
-    private let type: ListType
+    private let type: MovieListType
     private let parameters: [String: Any]
     
-    init(type: ListType,
+    init(type: MovieListType,
          page: Int,
          region: String? = nil) {
       var params: [String: Any] = [RequestParameterKey.apiKey: Constant.TMDB.apiKey,
@@ -49,6 +29,21 @@ enum MovieAPI {
       }
       parameters = params
       self.type = type
+    }
+    
+    private func getPath(type: MovieListType) -> String {
+      switch type {
+      case .latest:
+        return "movie/latest"
+      case .nowPlaying:
+        return "movie/now_playing"
+      case .popular:
+        return "movie/popular"
+      case .topRated:
+        return "movie/top_rated"
+      case .upcoming:
+        return "movie/upcoming"
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 //
-//  JSONDecoderExtension.swift
+//  JSONDecoder.swift
 //  MovieTracker
 //
 //  Created by 黃韋韜 on 2021/6/15.

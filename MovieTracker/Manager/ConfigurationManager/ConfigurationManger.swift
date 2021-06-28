@@ -42,17 +42,4 @@ final class ConfigurationManger {
       return Disposables.create()
     }
   }
-  
-  private func storeObjectToUserDefault<T:Codable>(object: T, key: String) {
-    let encoder = JSONEncoder()
-    guard let data = try? encoder.encode(object) else {return  }
-    UserDefaults.standard.set(data, forKey: key)
-  }
-  
-  private func getObjectFromUserDefault<T:Codable>(key: String) -> T? {
-    let decoder = JSONDecoder()
-    guard let data = UserDefaults.standard.data(forKey: key),
-          let model = try? decoder.decode(T.self, from: data) else { return nil }
-    return model
-  }
 }
